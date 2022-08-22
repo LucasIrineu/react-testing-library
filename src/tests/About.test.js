@@ -9,7 +9,7 @@ test('contém informações sobre a Pokédex', () => {
   expect(aboutH2).toBeInTheDocument();
 });
 
-test('contém 2 paragrafos com texto sobre a Pokedéx', () => {
+test('contém imagem com link correto', () => {
   renderWithRouter(<About />);
   const img = screen.getByRole('img');
   expect(img).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/thumb/8/86/Gen_I_Pok%C3%A9dex.png/800px-Gen_I_Pok%C3%A9dex.png');
