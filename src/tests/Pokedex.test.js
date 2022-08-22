@@ -8,6 +8,7 @@ import pokemons from '../data';
 
 const pokemonTypes = ['Electric', 'Fire',
   'Bug', 'Poison', 'Psychic', 'Normal', 'Dragon'];
+
 const isPokemonFavoriteById = {
   10: false,
   23: true,
