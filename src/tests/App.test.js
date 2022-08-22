@@ -41,8 +41,6 @@ test('redireciona à "página Not Found" ao entrar em uma URL desconhecida', () 
   const { history } = renderWithRouter(<App />);
 
   history.push('/urlquenaoexiste');
-  // const notFoundTitle = screen.getByRole('heading',
-  //  { level: 2 });
 
   const notFoundTitle = screen.getByText('Page requested not found');
   expect(notFoundTitle).toBeInTheDocument();
